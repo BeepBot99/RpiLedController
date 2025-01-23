@@ -3,13 +3,13 @@
     x:Class="RpiLedController.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:RpiLedController"
+    xmlns:views="clr-namespace:RpiLedController.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="Raspberry Pi LED Controller">
 
     <ShellContent
-        Title="LED"
-        ContentTemplate="{DataTemplate local:LedView}"
+        Title="Raspberry Pi LED Controller"
+        ContentTemplate="{DataTemplate views:LedView}"
         Route="LedView" />
 
 </Shell>

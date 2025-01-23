@@ -6,12 +6,12 @@
 
     <!-- Note: For Android please see also Platforms\Android\Resources\values\colors.xml -->
 
-    <Color x:Key="Primary">DarkRed</Color>
+    <Color x:Key="Primary">Yellow</Color>
     <Color x:Key="PrimaryDark">Yellow</Color>
-    <Color x:Key="PrimaryDarkText">Maroon</Color>
-    <Color x:Key="Secondary">Orange</Color>
-    <Color x:Key="SecondaryDarkText">Red</Color>
-    <Color x:Key="Tertiary">OrangeRed</Color>
+    <Color x:Key="PrimaryDarkText">Yellow</Color>
+    <Color x:Key="Secondary">Yellow</Color>
+    <Color x:Key="SecondaryDarkText">Yellow</Color>
+    <Color x:Key="Tertiary">Yellow</Color>
 
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>

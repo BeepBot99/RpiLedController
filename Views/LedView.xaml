@@ -3,21 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RpiLedController.Views.LedView"
              xmlns:viewModels="clr-namespace:RpiLedController.ViewModels"
-             Title="LedView">
-    <HorizontalStackLayout HorizontalOptions="Center">
-        <ContentView 
+             Title="Toggle the LED:">
+    <ContentPage.BindingContext>
+        <viewModels:LedViewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout VerticalOptions="Center">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <ContentView 
             WidthRequest="150" 
             HeightRequest="150" 
             HorizontalOptions="Start">
-            <ContentView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnEllipseTapped" />
-            </ContentView.GestureRecognizers>
-            <Ellipse 
-                Fill="Red" 
-                Stroke="Black" 
-                StrokeThickness="2" 
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ToggleCommand}" />
+                </ContentView.GestureRecognizers>
+                <Ellipse 
+                Fill="{Binding Color}" 
+                Stroke="Gray" 
+                StrokeThickness="20" 
                 WidthRequest="150" 
                 HeightRequest="150" />
-        </ContentView>
-    </HorizontalStackLayout>
+            </ContentView>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>
